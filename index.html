@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1><a href="#inicio" class="fonte-titulo cor-titulo">LB</a></h1>
+            <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon custom-toggler"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex text-center mt-2">
+                    <li class="nav-item fw-bold">
+                        <a href="#inicio" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-tags-fill me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#marcas" class="nav-link">
+                            <i class="bi bi-bookmark-check me-1"></i>
+                            Marcas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#perguntas-frequentes" class="nav-link">
+                            <i class="bi bi-question-octagon me-1"></i>
+                            Perguntas Frequentes
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./imagens/pexels-antonio-sokic-1901950-3839432.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./imagens/pexels-olly-3755706.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./imagens/pexels-pixabay-325876.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="./imagens/pexels-solliefoto-298863.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12">
+                            <img class="d-block w-100 rounded mb-3 mb-lg-0" src="./imagens/lb.jpg" alt="logo">
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <h2 class="fonte-titulo">Sobre <span class="cor-titulo">a Loja</span></h2>
+                            <p class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, similique voluptas? Ipsa amet aliquid quasi voluptatem inventore dolorem quod maxime fugiat pariatur, ab, minus, cum voluptatibus? Repellendus cumque amet pariatur?
+                            </p>
+                            <h3 class="fonte-titulo">
+                                Nossa <span class="cor-titulo">Historia</span>
+                            </h3>
+                            <p class="fs-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, illo rerum quia ut dolore laudantium impedit tenetur nemo? Cumque unde nisi quia, nemo voluptas assumenda! Illo ipsa incidunt veniam deleniti?
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="fonte-titulo text-center mb-5">Nossos <span class="cor-titulo">Produtos</span></h2>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <nav class="nav nav-pills">
+                            <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link fw-bold fonte-titulo active" type="button">Sapatos</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link fw-bold fonte-titulo" type="button">Camisetas</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link fw-bold fonte-titulo" type="button">Calças</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link fw-bold fonte-titulo" type="button">Ternos</button>
+                        </nav>
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane active" id="aba1">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/sapato.jpg" alt="Sapato social preto">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Sapato Social Preto</h3>
+                                        <strong class="fs-4">R$ 400,00</strong>
+                                        <p>Social</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/tênis básico azul.jpg" alt="tenis básico azul">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Tênis Básico Azul</h3>
+                                        <strong class="fs-4">R$ 200,00</strong>
+                                        <p>casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/tênis nike.jpg" alt="tenis nike">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Tênis Nike</h3>
+                                        <strong class="fs-4">R$ 970,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/tênis vans.jpg" alt="tenis vans">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Tênis Vans</h3>
+                                        <strong class="fs-4">R$ 300,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/tênis vermelho.jpg" alt="tenis vermelho">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Tênis Vermelho</h3>
+                                        <strong class="fs-4">R$ 200,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/blusa básica branca lb.jpg" alt="camiseta básica lb">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Camiseta Básica LB</h3>
+                                        <strong class="fs-4">R$ 150,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/blusa básica branca.jpg" alt="camiseta básica branca">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Camiseta Básica Branca</h3>
+                                        <strong class="fs-4">R$ 100,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/blusa básica preta.jpg" alt="camiseta básica preta">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Camiseta Básica Preta</h3>
+                                        <strong class="fs-4">R$ 100,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/blusa willblue.jpg" alt="camiseta willblue">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Camiseta Willblue</h3>
+                                        <strong class="fs-4">R$ 990,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba3">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/calça jeans lb.jpg" alt="calça jeans lb">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Calça jeans LB</h3>
+                                        <strong class="fs-4">R$ 300,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/calça jeans.jpg" alt="calça jeans">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Calça jeans</h3>
+                                        <strong class="fs-4">R$ 200,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/calça jeans preta.jpg" alt="calça jeans preta">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Calça jeans preta</h3>
+                                        <strong class="fs-4">R$ 200,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/calça jon-brown.jpg" alt="calça jon-brown">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Calça Jon-brown</h3>
+                                        <strong class="fs-4">R$ 1000,00</strong>
+                                        <p>Casual</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="aba4">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/terno horn.jpg" alt="terno horn">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Terno Horn</h3>
+                                        <strong class="fs-4">R$ 1800,00</strong>
+                                        <p>Social</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/terno roflman.jpg" alt="terno roflman">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Terno Roflman</h3>
+                                        <strong class="fs-4">R$ 3900,00</strong>
+                                        <p>Social</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/terno vong.jpg" alt="terno vong">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Terno Vong</h3>
+                                        <strong class="fs-4">R$ 9800,00</strong>
+                                        <p>Social</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mb-5">
+                                        <img class="d-block w-100 mb-2 rounded" src="./imagens/terno worg.jpg" alt="terno worg">
+                                        <h3 class="fonte-titulo cor-titulo fs-4">Terno Worg</h3>
+                                        <strong class="fs-4">R$ 2900,00</strong>
+                                        <p>Social</p>
+                                        <button class="btn btn-success fw-bold">
+                                            <i class="bi bi-cart me-1"></i>
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="marcas" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row pb-5">
+                    <h2 class="fonte-titulo text-center">Temos <span class="cor-titulo">marcas de luxo</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-md-3">
+                        <div class="card text-bg-dark">
+                            
+                            <div class="card-img-overlay">
+                                <h4 class="card-title cor-titulo fonte-titulo">Willblue</h4>
+                                <p class="card-text my-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolores incidunt tempora ut reiciendis odit eos, atque excepturi repellendus eius unde illum perferendis voluptatem at magnam mollitia aperiam animi minus?
+                                </p>
+                                <a href="#" class="btn btn-light">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card text-bg-dark">
+                            
+                            <div class="card-img-overlay">
+                                <h4 class="card-title cor-titulo fonte-titulo">jon-brown</h4>
+                                <p class="card-text my-5">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse delectus impedit sapiente est obcaecati incidunt velit? Sunt dicta accusantium eius perferendis labore dolores iste, placeat, obcaecati vel mollitia repellendus molestias.
+                                </p>
+                                <a href="#" class="btn btn-light">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card text-bg-dark">
+                            
+                            <div class="card-img-overlay">
+                                <h4 class="card-title cor-titulo fonte-titulo">Vong</h4>
+                                <p class="card-text my-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eius nisi eaque optio voluptates natus dolor cumque in laboriosam minima repudiandae fugit ullam iste. Consequuntur, odit obcaecati. Nobis, dicta eligendi.
+                                </p>
+                                <a href="#" class="btn btn-light">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section id="perguntas-frequentes" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row pb-5">
+                    <h2 class="fonte-titulo text-center">Perguntas <span class="cor-titulo">Frequentes</span></h2>
+                </div>
+                <div class="row">
+                    <div class="accordion">
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header">
+                                <button class="accordion-button bg-success text-light"  data-bs-toggle="collapse" data-bs-target="#resposta1">
+                                    Devoluções ?
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse show" id="resposta1">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, fugiat consectetur a voluptates possimus quos eaque eos perferendis officiis praesentium ducimus harum at nostrum minima nisi delectus pariatur. Commodi, cupiditate.
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header">
+                                <button class="accordion-button bg-success text-light" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                                    Onde nos encontrar ?
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="resposta2">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, soluta nihil. Accusamus, maxime. Sit ea tempore facere blanditiis molestias. Optio, inventore dolorem laudantium eveniet quos quae aliquid cupiditate labore obcaecati!
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header">
+                                <button class="accordion-button bg-success text-light" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                                    Valor mínimo para ter frete grátis ?
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="resposta3">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, a at dignissimos nam saepe ea asperiores illum veritatis dolorem sed corporis error maxime mollitia ullam nisi sunt neque, vitae amet!
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header">
+                                <button class="accordion-button bg-success text-light" data-bs-toggle="collapse" data-bs-target="#resposta4">
+                                    Como se tornar parceiro da loja ?
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="resposta4">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo amet quam, totam natus doloremque dignissimos veniam soluta. Ratione tempora dolore ipsa voluptates, esse perspiciatis consectetur obcaecati amet facilis recusandae quidem.
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="fonte-titulo text-center">Fale <span class="cor-titulo">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mt-2">
+                                <label for="nome" class="form-label fw-bold" required >Seu nome:</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="mt-2">
+                                <label for="telefone" class="form-label fw-bold" required >Seu telefone:</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mt-2">
+                                <label for="email" class="form-label fw-bold" required >Seu email:</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mt-2">
+                                <label for="mensagem" class="form-label fw-bold" required >Adicione uma mensagem:</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-light mt-3 mb-5 fw-bold">Cadastrar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="cor-titulo fonte-titulo">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook cor-titulo"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 mx-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram cor-titulo"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp cor-titulo"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="cor-titulo fonte-titulo">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua nova era n° 37, Bairro gorgo - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-2">
+            <p class="text-center m-0">
+                &copy; aluno - ebac - 2024 
+            </p>
+        </footer>
+    </div>
+
+    <button class="d-none" type="button" data-bs-toggle="modal" data-bs-target="#modal">
+        botao
+    </button>
+    <div class="modal" id="modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Ofertas Exclusivas</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100" src="./imagens/promoção 30.jpg" class="img-fluid" alt="Oferta exclusiva">
+                </div>
+                <div class="modal-footer">
+                    Somente até o dia <time>03/05/2024 às 00:00</time>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
